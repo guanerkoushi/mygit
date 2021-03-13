@@ -1,1 +1,9 @@
 这是我要上传到github的文件hhhhhhh
+解决p12中用ssh-key后仍须输入密码的问题
+1、使用ssh方式克隆 git clone git@gitee.com:Name/project.git
+就是说，在项目克隆/下载处，选择ssh方式的下载地址
+2、如果你已经用https方式克隆了仓库，不必删除仓库重新克隆，只需将当前项目中的 .git/config文件中的
+url = https://gitee.com/Name/project.git
+修改为
+url = git@gitee.com:Name/project.git
+再次提交就不需要密码了！
